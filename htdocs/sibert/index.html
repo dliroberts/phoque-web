@@ -1,0 +1,108 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="robots" content="none">
+        <link rel="shortcut icon" href="favicon.ico">
+        <title>Ministero degli Standard Autistici</title>
+        <link rel="stylesheet" href="style.css">
+        <script>
+            function login() {
+                const pin = document.getElementById('pin').value;
+                console.log(pin);
+                if (pin == '618') {
+                    window.location.href = "inside.html";
+                } else {
+                    const errorElem = document.getElementById('error');
+                    errorElem.style.display = 'inherit';
+                }
+                return;
+            }
+        </script>
+    </head>
+    <body>
+        <div id="header">
+            <a href="https://www.governo.it/"><img src="italian_govt_logo.svg" class="logo-image"></a>
+            <span id="gov"><strong>Governo Italiano</strong></span>
+            <span id="agency">Ministero degli Standard Autistici</span>
+        </div>
+
+        <div id="content-frame">
+            <div id="content">
+                <div id="content-main">
+                    <p><b>Oggetto: sito web di Signore Sibert.</b></p>
+
+                    <p>Alla cortese attenzione di Signora P.,</p>
+                    
+                    <p>
+                        In riferimento alla Sua richiesta per quel contenuto, abbiamo il dovere di informarLa che prima
+                        di accederlo, Lei deve compire i requisiti del Ministero degli Standard Autistici:
+                    </p>
+                    
+                    <ol>
+                        <li>Effetuare l'accesso al Suo account ministeriale.</li>
+                        <li>Esaminare i Suoi peccati.</li>
+                        <li>Recitare &#8220;Ave Maria&#8221; il numero di volte specificato.</li>
+                    </ol>
+
+                    <p>Ringraziando per la cortese attenzione che vorrà accordarmi porgo distinti saluti.</p>
+
+                    <p id="error">
+                        Dati di accesso errati.
+                    </p>
+
+                    <form>
+                        <label for="username">Nome utente</label>
+                        <input type="text" value="veronica" name="username" required>
+                    
+                        <label for="password">Codice segreto</label>
+                        <input type="password" id="pin" name="pin" required>
+                        
+                        <button type="button" onclick="login()">Login</button>
+
+                        <span class="recover"><a href="recover_password.html">Recupera codice dimenticato</a></span>
+                
+                    </form>
+                </div>
+                <div id="footer">
+
+                    <h3>Contatti</h3>
+
+                    <hr>
+
+                    <h3>Ministero degli Standard Autistici</h3>
+
+                    <p class="address">
+                        Palazzo Chigi<br>
+                        Piazza Colonna 370<br>
+                        00187 Roma - Italia
+                    </p>
+
+                    <hr>
+
+                    <h3>Corrispondenza carticea</h3>
+
+                    <p class="address">
+                        Via dell'Impresa 89<br>
+                        00186 Roma - Italia
+                    </p>
+
+                    <p class="advice"><b>È opportuno indicare chiaramente sull'involucro la Struttura destinataria</b></p>
+
+                    <hr>
+
+                    <h3>Indirizzi di posta elettronica</h3>
+
+                    <p><a href="http://presidenza.governo.it/AmministrazioneTrasparente/Organizzazione/TelefonoPostaElettronica/PEC.html">Elenco PEC</a></p>
+
+                    <p><a href="http://presidenza.governo.it/AmministrazioneTrasparente/Organizzazione/TelefonoPostaElettronica/email.html">Elenco E-Mail</a></p>
+
+                    <hr>
+
+                    <h3>Recapiti telefonici</h3>
+
+                    <p>Centralino: (+39) 06.6779.1</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
